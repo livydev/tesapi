@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script data-ad-client="ca-pub-5274370025994358" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-8FB675RP8Z"></script>
+<script> window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8FB675RP8Z');
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script> $.getJSON("https://api.ipify.org?format=json",
+                                          function(data) {
+  
+            // Setting text of element P with id gfg
+            $("#gfg").html(data.ip);
+        })
+    </script>
+ <script> (function($) {
+  'use strict';
+  $(function() {
+    $('[data-toggle="offcanvas"]').on("click", function() {
+      $('.sidebar-offcanvas').toggleClass('active')
+    });
+  });
+})(jQuery);
+</script>
+<meta charset="utf-8">
+<meta property="og:image" content="https://telegra.ph/file/e97fc6d0e6e196515f152.jpg">
+<link rel="icon" type="image/png" href="https://telegra.ph/file/e97fc6d0e6e196515f152.jpg">
+<meta name="keywords" content="MailAPI, Mail-api, Free rest api, Mail docs, MailWEB, Mail-Web, zahir api, tobz api, studiovdk, programing unpas, studiovdk entertainment">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Rest API - Putu Arya</title>
+<link href="https://viko-api.herokuapp.com/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<link href="https://viko-api.herokuapp.com/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="https://viko-api.herokuapp.com/css/ruang-admin.min.css" rel="stylesheet">
+<script src="https://studiovdk.herokuapp.com/main-menu/databs.js"></script>
+<script src="https://studiovdk.herokuapp.com/main-menu/berita.js"></script>
+<script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+<link href="https://viko-api.herokuapp.com/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+<style> .loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+</head>
+<body id="page-top">
+<div id="wrapper">
+
+<ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar" style="">
+<a class="sidebar-brand d-flex align-items-center justify-content-center bg-info" href="#">
+<div class="sidebar-brand-icon">
+<span class="fas fa-fire"></span>
+</div>
+<div class="sidebar-brand-text mx-3">Mail - API</div><br>
+</a>
+<hr class="sidebar-divider my-0">
+<li class="nav-item active">
+<a class="nav-link" href="">
+<i class="fas fa-fw fa-code"></i>
+<span>Home</span></a><br>
+</li>
+<hr class="sidebar-divider my-0">
+<li class="nav-item active">
+<a class="nav-link" href="/game">
+<i class="fa fa-gamepad"></i>
+<span>Game Lainnya</span></a>
+<li class="nav-item active">
+<a class="nav-link" href="/media">
+<i class="fa fa-share"></i>
+<span>Media Sosial</span></a>
+</li>
+<hr class="sidebar-divider">
+<div class="sidebar-heading"> API Features </div>
+<li class="nav-item">
+<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap" aria-expanded="true" aria-controls="collapseBootstrap">
+<i class="fas fa-download"></i>
+<span>Downloader API</span>
+</a>
+<div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
+<div class="bg-primary py-2 collapse-inner rounded">
+<h6 class="collapse-header">Media Features</h6>
+<a class="collapse-item" href="/api/download/fb?url=https://www.facebook.com/alanwalkermusic/videos/277641643524720&apikey=APIKEYMU">Facebook Download</a>
+<a class="collapse-item" href="/api/download/tiktok?url=https://vt.tiktok.com/ZSJhvu1AE/&apikey=APIKEYMU">Tiktok Download</a>
+<a class="collapse-item" href="/api/download/ig?url=https://www.instagram.com/p/CNtpwxuH5NK/?igshid=g26k5coikzwr&apikey=APIKEYMU">Instagram Download</a>
+<a class="collapse-item" href="/api/download/ytmp3?url=https://youtu.be/Nq5rzeJ5Ab4&apikey=APIKEYMU">Youtube MP3 Download</a>
+<a class="collapse-item" href="/api/download/ytmp4?url=https://youtu.be/Nq5rzeJ5Ab4&apikey=APIKEYMU">Youtube MP4 Download</a>
+<a class="collapse-item" href="/api/playstore?namaapk=mobile legends&apikey=APIKEYMU">Play Store</a>
+<a class="collapse-item" href="/api/happymod?namaapk=mobile legends&apikey=APIKEYMU">Happy Mod</a>
+<a class="collapse-item" href="/api/mediafire?url=http://www.mediafire.com/file/js0gr2nozcmk9yg/example.txt/file&apikey=APIKEYMU">Mediafire Download</a>
+<a class="collapse-item" href="/api/yt/playmp3?query=Monolog-pamungkas&apikey=APIKEYMU">Youtube MP3</a>
+<a class="collapse-item" href="/api/yt/playmp4?query=Monolog-pamungkas&apikey=APIKEYMU">Youtube MP4</a>
+<h6 class="collapse-header">Sosial Media Features</h6>
+<a class="collapse-item" href="/api/comik?search=mobile legends&apikey=APIKEYMU">Comik</a>
+<a class="collapse-item" href="/api/stiker?query=Patrick Star&apikey=APIKEYMU">Sticker Search</a>
+<a class="collapse-item" href="/api/yt/search?query=Monolog-pamungkas&apikey=APIKEYMU">Youtube Searching</a>
+<h6 class="collapse-header">Stalking Features</h6>
+<a class="collapse-item" href="/api/stalk/ig?apikey=APIKEYMU&username=nathanaelhananta">Instagram Stalking</a>
+<a class="collapse-item" href="/api/stalk/tiktok?apikey=APIKEYMU&username=chikakiku">Tiktok Stalking</a>
+<a class="collapse-item" href="/api/stalk/npm?apikey=APIKEYMU&query=zhirrr-api&hostname=zhirrr">Info NPM</a>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMusic" aria-expanded="true" aria-controls="collapseMusic">
+<i class="fas fa-music"></i>
+<span>Music API</span>
+</a>
+<div id="collapseMusic" class="collapse" aria-labelledby="headingMusic" data-parent="#accordionSidebar">
+<div class="bg-primary py-2 collapse-inner rounded">
+<h6 class="collapse-header">Music API</h6>
+<a class="collapse-item" href="/api/music/joox?apikey=APIKEYMU&query=monolog pamungkas">Joox Download</a>
+<a class="collapse-item" href="/api/music/spotify?apikey=APIKEYMU&query=ignite">Spotify Search</a>
+<a class="collapse-item" href="/api/music/liriklagu?query=stereo hearts&apikey=APIKEYMU">Search Lirik Lagu</a>
+<a class="collapse-item" href="/api/music/chordlagu?lagu=stereo hearts&apikey=APIKEYMU">Search Chord Lagu</a>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseIslamic" aria-expanded="true" aria-controls="collapseIslamic">
+<i class="fas fa-star-and-crescent"></i>
+<span>Islamic API</span>
+</a>
+<div id="collapseIslamic" class="collapse" aria-labelledby="headingIslamic" data-parent="#accordionSidebar">
+<div class="bg-primary py-2 collapse-inner rounded">
+<h6 class="collapse-header">Islamic Fitur</h6>
+<a class="collapse-item" href="/api/muslim/hadits?kitab=bukhari&nomor=52&apikey=APIKEYMU">Hadits Shahih</a>
+<a class="collapse-item" href="/api/muslim/quran?surah=1&ayat=2&apikey=APIKEYMU">Al Qur'an</a>
+<a class="collapse-item" href="/api/muslim/tahlil?apikey=APIKEYMU">Doa Tahlil</a>
+<a class="collapse-item" href="/api/muslim/wirid?apikey=APIKEYMU">Doa Wirid</a>
+<a class="collapse-item" href="/api/muslim/asmaulhusna?apikey=APIKEYMU">Asmaul Husna</a>
+<a class="collapse-item" href="/api/muslim/doaharian?apikey=APIKEYMU">Doa Harian</a>
+<a class="collapse-item" href="/api/muslim/ayatkursi?apikey=APIKEYMU">Ayat Kursi</a>
+<a class="collapse-item" href="/api/muslim/kisahnabi?nabi=muhammad&apikey=APIKEYMU">Kisah Nabi</a>
+<a class="collapse-item" href="/api/muslim/niatshalat?apikey=APIKEYMU">Niat Shalat</a>
+<a class="collapse-item" href="/api/muslim/bacaanshalat?apikey=APIKEYMU">Bacaan Shalat</a>
+<a class="collapse-item" href="/api/muslim/jadwalshalat?kota=jakartautara&apikey=APIKEYMU">Jadwal Shalat</a>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAsupan" aria-expanded="true" aria-controls="collapseKodepos">
+<i class="fa fa-coffee"></i>
+<span>Asupan API</span>
+</a>
+<div id="collapseAsupan" class="collapse" aria-labelledby="headingKodepos" data-parent="#accordionSidebar">
+<div class="bg-primary py-2 collapse-inner rounded">
+<h6 class="collapse-header">Asupan Video</h6>
+<a class="collapse-item" href="/api/asupan?apikey=APIKEYMU">Random Asupan</a>
+<a class="collapse-item" href="/api/asupan/santuy?apikey=APIKEYMU">Asupan Santuy</a>
+<a class="collapse-item" href="/api/asupan/tiktok?apikey=APIKEYMU">Asupan TikTok</a>
+<a class="collapse-item" href="/api/asupan/ukhty?apikey=APIKEYMU">Asupan Ukhty </a>
+<a class="collapse-item" href="/api/bokep?apikey=APIKEYMU">Asupan Bokep</a>
+<h6 class="collapse-header">Asupan Image</h6>
+<a class="collapse-item" href="/api/asupan/hijab?apikey=APIKEYMU">Asupan Ukhty</a>
+<a class="collapse-item" href="/api/asupan/cecan?apikey=APIKEYMU">Asupan Cecan</a>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAnime2" aria-expanded="true" aria-controls="collapseAnime2">
+<i class="fas fa-exclamation-triangle"></i>
+<span>NSFW API</span>
+</a>
+<div id="collapseAnime2" class="collapse" aria-labelledby="headingAnime" data-parent="#accordionSidebar">
+<div class="bg-primary py-2 collapse-inner rounded">
+<h6 class="collapse-header">NSFW Features</h6>
+<a class="collapse-item" href="api/nsfw/ntr?apikey=APIKEYMU">Netorare</a>
+<a class="collapse-item" href="api/nsfw/maid?apikey=APIKEYMU">Maid</a>
+<a class="collapse-item" href="api/nsfw/uglybastard?apikey=APIKEYMU">Ulgy Bastard</a>
+<a class="collapse-item" href="api/nsfw/ass?apikey=APIKEYMU">ASS</a>
+<a class="collapse-item" href="api/nsfw/ahegao?apikey=APIKEYMU">Ahegao</a>
+<a class="collapse-item" href="api/nsfw/bdsm?apikey=APIKEYMU">BDSM</a>
+<a class="collapse-item" href="api/nsfw/blowjob?apikey=APIKEYMU">Blowjob</a>
+<a class="collapse-item" href="api/nsfw/cuckold?apikey=APIKEYMU">Cuckold</a>
+<a class="collapse-item" href="api/nsfw/cum?apikey=APIKEYMU">Cum</a>
+<a class="collapse-item" href="api/nsfw/ero?apikey=APIKEYMU">Ero</a>
+<a class="collapse-item" href="api/nsfw/femdom?apikey=APIKEYMU">Fendom</a>
+<a class="collapse-item" href="api/nsfw/foot?apikey=APIKEYMU">Foot</a>
+<a class="collapse-item" href="api/nsfw/gangbang?apikey=APIKEYMU">GangBang</a>
+<a class="collapse-item" href="api/nsfw/glasses?apikey=APIKEYMU">Glasses</a>
+<a class="collapse-item" href="api/nsfw/hentai?apikey=APIKEYMU">Hentai</a>
+<a class="collapse-item" href="api/nsfw/hentaigif?apikey=APIKEYMU">Hentai GIF</a>
+<a class="collapse-item" href="api/nsfw/jahy?apikey=APIKEYMU">Jahy</a>
+<a class="collapse-item" href="api/nsfw/masturbation?apikey=APIKEYMU">Masturbation</a>
+<a class="collapse-item" href="api/nsfw/nsfwNeko?apikey=APIKEYMU">Neko</a>
+<a class="collapse-item" href="api/nsfw/orgy?apikey=APIKEYMU">Orgy</a>
+<a class="collapse-item" href="api/nsfw/panties?apikey=APIKEYMU">Panties</a>
+<a class="collapse-item" href="api/nsfw/pussy?apikey=APIKEYMU">Pussy</a>
+<a class="collapse-item" href="api/nsfw/thighs?apikey=APIKEYMU">Thighs</a>
+<a class="collapse-item" href="api/nsfw/yuri?apikey=APIKEYMU">Yuri</a>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGachaCewe" aria-expanded="true" aria-controls="collapseForm">
+<i class="fas fa-fire"></i>
+<span>Gacha Cewe</span>
+</a>
+<div id="collapseGachaCewe" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+<div class="bg-primary py-2 collapse-inner rounded">
+<h6 class="collapse-header">Cecan Features</h6>
+<a class="collapse-item" href="/api/cewe/vietnam?apikey=APIKEYMU">Cecan Vietnam</a>
+<a class="collapse-item" href="/api/cewe/malaysia?apikey=APIKEYMU">Cecan Malaysia</a>
+<a class="collapse-item" href="/api/cewe/korea?apikey=APIKEYMU">Cecan Korea</a>
+<a class="collapse-item" href="/api/cewe/indonesia?apikey=APIKEYMU">Cecan Indonesia</a>
+<a class="collapse-item" href="/api/cewe/japan?apikey=APIKEYMU">Cecan Japan</a>
+<a class="collapse-item" href="/api/cewe/thailand?apikey=APIKEYMU">Cecan Thailand</a>
+<a class="collapse-item" href="/api/cewe/china?apikey=APIKEYMU">Cecan China</a>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseWallpaper" aria-expanded="true" aria-controls="collapseKodepos">
+<i class="fas fa-image"></i>
+<span>Random Image API</span>
+</a>
+<div id="collapseWallpaper" class="collapse" aria-labelledby="headingKodepos" data-parent="#accordionSidebar">
+<div class="bg-primary py-2 collapse-inner rounded">
+<h6 class="collapse-header">Random Image Fitur</h6>
+<a class="collapse-item" href="api/search/image?apikey=APIKEYMU&query=Mail">Search Image</a>
+<a class="collapse-item" href="/api/quotesimage?apikey=APIKEYMU">Quotes Image</a>
+<a class="collapse-item" href="/api/techno?apikey=APIKEYMU">Wallpaper Teknologi</a>
+<a class="collapse-item" href="/api/progam?apikey=APIKEYMU">Wallpaper Programming</a>
+<a class="collapse-item" href="/api/cyber?apikey=APIKEYMU">Wallpaper CyberSpace</a>
+<a class="collapse-item" href="/api/muslim?apikey=APIKEYMU">Wallpaper Muslim</a>
+<a class="collapse-item" href="/api/gunung?apikey=APIKEYMU">Wallpaper Mountain</a>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSerti" aria-expanded="true" aria-controls="collapseKodepos">
+<i class="far fa-bookmark"></i>
+<span>Serti API</span>
+</a>
+<div id="collapseSerti" class="collapse" aria-labelledby="headingKodepos" data-parent="#accordionSidebar">
+<div class="bg-primary py-2 collapse-inner rounded">
+<a class="collapse-item" href="/api/serti/sertiepep?apikey=APIKEYMU&text=Mail">FF Serti</a>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTambahan" aria-expanded="true" aria-controls="collapseKodepos">
+<i class="fas fa-fw fa-images"></i>
+<span>Image Editor API</span>
+</a>
+<div id="collapseTambahan" class="collapse" aria-labelledby="headingKodepos" data-parent="#accordionSidebar">
+<div class="bg-primary py-2 collapse-inner rounded">
+<h6 class="collapse-header">Image Edit</h6>
+<a class="collapse-item" href="/api/trigger?apikey=APIKEYMU&url=https://telegra.ph/file/e97fc6d0e6e196515f152.jpg">Trigger</a>
+<a class="collapse-item" href="/api/passed?apikey=APIKEYMU&url=https://telegra.ph/file/e97fc6d0e6e196515f152.jpg">Passed</a>
+<a class="collapse-item" href="/api/wasted?apikey=APIKEYMU&url=https://telegra.ph/file/e97fc6d0e6e196515f152.jpg">Wasted</a>
+<a class="collapse-item" href="/api/meme?apikey=APIKEYMU&text=Mail&text2=Gans&url=https://telegra.ph/file/e97fc6d0e6e196515f152.jpg"> Sticker Meme</a>
+<a class="collapse-item" href="/api/fisheye?apikey=APIKEYMU&url=https://telegra.ph/file/e97fc6d0e6e196515f152.jpg">Fish Eye</a>
+<a class="collapse-item" href="/api/scary?apikey=APIKEYMU&url=https://telegra.ph/file/e97fc6d0e6e196515f152.jpg">Scary Gif</a>
+<a class="collapse-item" href="/api/petir?apikey=APIKEYMU&url=https://telegra.ph/file/e97fc6d0e6e196515f152.jpg">Petir </a>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMaker" aria-expanded="true" aria-controls="collapseMaker">
+<i class="fas fa-fw fa-images"></i>
+<span>Image Maker API</span>
+</a>
+<div id="collapseMaker" class="collapse" aria-labelledby="headingText" data-parent="#accordionSidebar">
+<div class="bg-primary py-2 collapse-inner rounded">
+<a class="collapse-item" href="/api/maker/nulis?apikey=APIKEYMU&text=Subscribe ZEROBOT">Nulis Buku</a>
+<a class="collapse-item" href="/api/maker/attp?apikey=APIKEYMU&text=Mail">ATTP</a>
+<a class="collapse-item" href="/api/maker/ttp?apikey=APIKEYMU&text=Mail">TTP</a>
+<a class="collapse-item" href="/api/maker/emoji2png?apikey=APIKEYMU&text=😎">Emoji To Png</a>
+<hr>
+<a class="collapse-item" href="/api/maker/qrcode?apikey=APIKEYMU&text=Mail">Qrcode</a>
+<a class="collapse-item" href="/api/maker/barcode?apikey=APIKEYMU&text=Mail">Barcode</a>
+<a class="collapse-item" href="/api/maker/transformer?apikey=APIKEYMU&text=MailGans">Transformer Text</a>
+<a class="collapse-item" href="/api/maker/skatch?apikey=APIKEYMU&url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbmrYfgiRt1lLwNgRMgMbID62qH3EQ2T1c6RUJEQMcoCWKqVVxAg7R_LfM&s=10">Skatch Effect</a>
+<a class="collapse-item" href="/api/maker/harta-tahta?apikey=APIKEYMU&text=Mail">Harta Tahta Maker</a>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePhotooxy" aria-expanded="true" aria-controls="collapsePhotooxy">
+<i class="fas fa-fw fa-images"></i>
+<span>Photooxy API</span>
+</a>
+<div id="collapsePhotooxy" class="collapse" aria-labelledby="headingText" data-parent="#accordionSidebar">
+<div class="bg-primary py-2 collapse-inner rounded">
+<h6 class="collapse-header">Photooxy Fitur</h6>
+<a class="collapse-item" href="/api/photooxy/shadow?apikey=APIKEYMU&text=Mail">Shadow Text</a>
+<a class="collapse-item" href="/api/photooxy/smoke?apikey=APIKEYMU&text=Mail">Smoke Text</a>
+<a class="collapse-item" href="/api/photooxy/burn-paper?apikey=APIKEYMU&text=Mail">Burn-paper Text</a>
+<a class="collapse-item" href="/api/photooxy/naruto?apikey=APIKEYMU&text=Mail">Naruto Text</a>
+<a class="collapse-item" href="/api/photooxy/romantic?apikey=APIKEYMU&text=Mail">Romantic Text</a>
+<a class="collapse-item" href="/api/photooxy/love-message?apikey=APIKEYMU&text=Mail">Love-Message Text</a>
+<a class="collapse-item" href="/api/photooxy/message-under-grass?apikey=APIKEYMU&text=Mail">Message-Under Grass</a>
+<a class="collapse-item" href="/api/photooxy/glitch?apikey=APIKEYMU&text1=Mail&text2=Rest API">Glitch Text</a>
+<a class="collapse-item" href="/api/photooxy/double-heart?apikey=APIKEYMU&text=Mail">Double Heart</a>
+<a class="collapse-item" href="/api/photooxy/coffe-cup?apikey=APIKEYMU&text=Mail">Coffe cup</a>
+<a class="collapse-item" href="/api/photooxy/love-text?apikey=APIKEYMU&text=Mail">Love Text</a>
+<a class="collapse-item" href="/api/wolverine?image=https://telegra.ph/file/e97fc6d0e6e196515f152.jpg&apikey=APIKEYMU">Wolverine Text</a>
+<a class="collapse-item" href="/api/photooxy/butterfly?apikey=APIKEYMU&text=Mail">Butterfly Text</a>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePen" aria-expanded="true" aria-controls="collapsePen">
+<i class="fa fa-fw fa-pencil-ruler"></i>
+<span>Canvas API</span>
+</a>
+<div id="collapsePen" class="collapse" aria-labelledby="headingText" data-parent="#accordionSidebar">
+<div class="bg-primary py-2 collapse-inner rounded">
+<a class="collapse-item" href="/api/bot/welkom2?pp=https://telegra.ph/file/e97fc6d0e6e196515f152.jpg&nama=Mail&bg=https://telegra.ph/file/e095868232316fb2a937e.jpg&gc=zerobot&member=200&apikey=APIKEYMU">Welcome</a>
+<a class="collapse-item" href="/api/bot/goodbye2?pp=https://telegra.ph/file/e97fc6d0e6e196515f152.jpg&nama=Mail&bg=https://telegra.ph/file/e095868232316fb2a937e.jpg&member=200&apikey=APIKEYMU">Goodbye</a>
+<a class="collapse-item" href="/api/bot/welkom?nama=Mail&gc=zerobot&ppgc=https://telegra.ph/file/e97fc6d0e6e196515f152.jpg&member=200&pp=https://telegra.ph/file/e97fc6d0e6e196515f152.jpg&bg=https://telegra.ph/file/e095868232316fb2a937e.jpg&apikey=APIKEYMU">Welcome 2</a>
+<a class="collapse-item" href="/api/bot/goodbye?nama=Mail&gc=zerobot&ppgc=https://telegra.ph/file/e97fc6d0e6e196515f152.jpg&member=200&pp=https://telegra.ph/file/e97fc6d0e6e196515f152.jpg&bg=https://telegra.ph/file/e095868232316fb2a937e.jpg&apikey=APIKEYMU">Goodbye 2</a>
+<a class="collapse-item" href="/api/bot/rank?pp=https://telegra.ph/file/e97fc6d0e6e196515f152.jpg&nama=Mail&bg=https://telegra.ph/file/e095868232316fb2a937e.jpg&needxp=20&currxp=25&level=30&rank=2&apikey=APIKEYMU">Rank</a>
+<a class="collapse-item" href="/api/bot/bag?bg=https://telegra.ph/file/6d94aacbfab6b5a8d45ad.png&stone=20&coal=20&wood=20&core=20&iore=20&gore=20&cingot=20&iingot=20&gingot=20&diamond=20&ruby=20&uranium=20&jadite=20&leather=20&meat=20&fish=20&apikey=APIKEYMU">Bag</a>
+<a class="collapse-item" href="/api/bot/levelup?pp=https://telegra.ph/file/e97fc6d0e6e196515f152.jpg&apikey=APIKEYMU">Levelup</a>
+<a class="collapse-item" href="/api/bot/sponbob?pp=https://telegra.ph/file/6d94aacbfab6b5a8d45ad.png&apikey=APIKEYMU">Spongebob</a>
+<a class="collapse-item" href="/api/amongus?name=Mail&impostor=true&color=red&apikey=APIKEYMU">Among Us</a>
+<a class="collapse-item" href="/api/bot/gfx1?nama=Mail&apikey=APIKEYMU">GFX 1</a>
+<a class="collapse-item" href="/api/bot/gfx2?nama=Mail&apikey=APIKEYMU">GFX 2</a>
+<a class="collapse-item" href="/api/bot/gfx3?text1=Mail&text2=Gans&apikey=APIKEYMU">GFX 3</a>
+<a class="collapse-item" href="/api/bot/gfx4?text1=Mail&text2=Gans&apikey=APIKEYMU">GFX 4</a>
+<a class="collapse-item" href="/api/bot/gfx5?text=Mail&apikey=APIKEYMU">GFX 5</a>
+<a class="collapse-item" href="/api/bot/gura?nama=Mail&apikey=APIKEYMU">GURA</a>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTextpro" aria-expanded="true" aria-controls="collapseTextpro">
+<i class="fas fa-fw fa-images"></i>
+<span>Textpro API</span>
+</a>
+<div id="collapseTextpro" class="collapse" aria-labelledby="headingAnime" data-parent="#accordionSidebar">
+<div class="bg-primary py-2 collapse-inner rounded">
+<h6 class="collapse-header">Textpro Fitur</h6>
+<a class="collapse-item" href="/api/textpro/natural-leaves?apikey=APIKEYMU&text=Mail">Natural Leaves Text Images</a>
+<a class="collapse-item" href="/api/textpro/black-pink?apikey=APIKEYMU&text=Mail">Black Pink Text Image</a>
+<a class="collapse-item" href="/api/textpro/drop-water?apikey=APIKEYMU&text=Mail">Drop Water Text Image</a>
+<a class="collapse-item" href="/api/textpro/logo-wolf?apikey=APIKEYMU&text=Mail&text2=Gans">Logo Wolf Text Image</a>
+<a class="collapse-item" href="/api/textpro/logo-wolf2?apikey=APIKEYMU&text=Mail&text2=Gans">Logo Wolf 2 Text Image</a>
+<a class="collapse-item" href="/api/textpro/logo-wolf?apikey=APIKEYMU&text=Mail&text2=Gans">Thunder Text Image</a>
+<a class="collapse-item" href="/api/textpro/logo-wolf?apikey=APIKEYMU&text=Mail">Firework Sparkle Text Image</a>
+<a class="collapse-item" href="/api/textpro/logo-wolf?apikey=APIKEYMU&text=Mail&text2=Gans">Matrix Text Image</a>
+<a class="collapse-item" href="/api/textpro/christmas?apikey=APIKEYMU&text=Mail">Christmas Text Image</a>
+<a class="collapse-item" href="/api/textpro/3d-gradient?apikey=APIKEYMU&text=Mail">3D Gradient Text Image</a>
+<a class="collapse-item" href="/api/textpro/porn-hub?apikey=APIKEYMU&text1=Mail&text2=Gans">Porn Hub Text Image</a>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseRandom" aria-expanded="true" aria-controls="collapseRandom">
+<i class="fas fa-random"></i>
+<span>Random API</span>
+</a>
+<div id="collapseRandom" class="collapse" aria-labelledby="headingGithub" data-parent="#accordionSidebar">
+<div class="bg-primary py-2 collapse-inner rounded">
+<h6 class="collapse-header">Random API</h6>
+<a class="collapse-item" href="/api/bucin?apikey=APIKEYMU">Bucin</a>
+<a class="collapse-item" href="/api/random/pantun?apikey=APIKEYMU">Pantun</a>
+<a class="collapse-item" href="/api/cerpen?apikey=APIKEYMU">Cerpen</a>
+<a class="collapse-item" href="/api/cersex?apikey=APIKEYMU">Cersex</a>
+<a class="collapse-item" href="/api/random/quotes?apikey=APIKEYMU">Quotes</a>
+<a class="collapse-item" href="/api/random/quotes/muslim?apikey=APIKEYMU">Quotes Islami</a>
+<a class="collapse-item" href="/api/random/quotes/kanye?apikey=APIKEYMU">Quotes Kanye</a>
+<a class="collapse-item" href="/api/random/meme?apikey=APIKEYMU">Meme</a>
+<a class="collapse-item" href="/api/random/wallpaper?apikey=APIKEYMU">Wallpaper</a>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAnime" aria-expanded="true" aria-controls="collapseAnime">
+<i class="fas fa-cat"></i>
+<span>Anime API</span>
+</a>
+<div id="collapseAnime" class="collapse" aria-labelledby="headingAnime" data-parent="#accordionSidebar">
+<div class="bg-primary py-2 collapse-inner rounded">
+<h6 class="collapse-header">Anime Fitur</h6>
+<a class="collapse-item" href="/api/anime/kusonime?search=planetarian&apikey=APIKEYMU">Kusonime</a>
+<a class="collapse-item" href="/api/anime/manga?search=kimetsu no yaiba&apikey=APIKEYMU">Manga</a>
+<a class="collapse-item" href="/api/anime/loli?apikey=APIKEYMU">Random Loli</a>
+<a class="collapse-item" href="/api/neonime?apikey=APIKEYMU&query=Naruto">Neonime</a>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGames" aria-expanded="true" aria-controls="collapseForm">
+<i class="fas fa-laugh-beam"></i>
+<span>Fun API</span>
+</a>
+<div id="collapseGames" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+<div class="bg-primary py-2 collapse-inner rounded">
+<h6 class="collapse-header">Fun Fitur</h6>
+<a class="collapse-item" href="/api/artimimpi?apikey=APIKEYMU&query=ngewe">Arti Mimpi</a>
+<a class="collapse-item" href="/api/artinama?apikey=APIKEYMU&query=Mail">Arti Nama</a>
+<a class="collapse-item" href="/api/kuis/caklontong?apikey=APIKEYMU">Cak Lontong</a>
+<a class="collapse-item" href="/api/kuis/tebakgambar?apikey=APIKEYMU">Tebak Gambar</a>
+<a class="collapse-item" href="/api/tebakbendera?apikey=APIKEYMU">Tebak Bendera</a>
+<a class="collapse-item" href="/api/maker/dadu?apikey=APIKEYMU">Tebak Dadu</a>
+<a class="collapse-item" href="/api/hilih?kata=ngapain mydw&apikey=APIKEYMU">Kata Hilih</a>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseItem" aria-expanded="true" aria-controls="collapseForm">
+<i class="fas fa-wrench"></i>
+<span>Tools API</span>
+</a>
+<div id="collapseItem" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+<div class="bg-primary py-2 collapse-inner rounded">
+<h6 class="collapse-header">Tools Fitur</h6>
+<a class="collapse-item" href="/api/web2plain-text?apikey=APIKEYMU&url=https://zerochanbot.herokuapp.com">Web To Plain-Text</a>
+<a class="collapse-item" href="/api/tools/wpuser?apikey=APIKEYMU&url=http://gdjms.co.za/" target="_blank">Wordpress User</a>
+<a class="collapse-item" href="/api/translate?kata=hi&apikey=APIKEYMU">Translate</a>
+<a class="collapse-item" href="/api/fakedata?country=en&apikey=APIKEYMU">Fake Data</a>
+<h6 class="collapse-header">Encrypt Tools</h6>
+<a class="collapse-item" href="/api/base?apikey=APIKEYMU&type=base64&encode=APIKEYMU">Base64 Encrypt</a>
+<a class="collapse-item" href="/api/base?apikey=APIKEYMU&type=base32&encode=APIKEYMU">Base32 Encrypt</a>
+<h6 class="collapse-header">Decrypt Tools</h6>
+<a class="collapse-item" href="/api/base?apikey=APIKEYMU&type=base64&decode=APIKEYMU">Base64 Decrypt</a>
+<a class="collapse-item" href="/api/base?apikey=APIKEYMU&type=base32&decode=APIKEYMU">Base32 Decrypt</a>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInfo" aria-expanded="true" aria-controls="collapseother">
+<i class="fab fa-fw fa-wpforms"></i>
+<span>Other API</span>
+</a>
+<div id="collapseInfo" class="collapse" aria-labelledby="headingother" data-parent="#accordionSidebar">
+<div class="bg-primary py-2 collapse-inner rounded">
+<h6 class="collapse-header">Other Menu</h6>
+<a class="collapse-item" href="/api/jadwaltvnow?apikey=APIKEYMU">Jadwal Tv Now</a>
+<a class="collapse-item" href="/api/jadwaltv?apikey=APIKEYMU&query=Gtv">Jadwal Tv</a>
+<a class="collapse-item" href="/api/short/tinyurl?url=google.com&apikey=APIKEYMU">Shortlink Tinyurl</a>
+<a class="collapse-item" href="/api/tools/map?kota=sukoharjo&apikey=APIKEYMU">Peta</a>
+<a class="collapse-item" href="/api/info/gempa?apikey=APIKEYMU">Info Gempa</a>
+<a class="collapse-item" href="/api/info/cuaca?apikey=APIKEYMU&kota=sukoharjo">Info Cuaca</a>
+<a class="collapse-item" href="/api/info/covidindo?apikey=APIKEYMU">Covid Indo</a>
+<a class="collapse-item" href="/api/info/covidworld?apikey=APIKEYMU">Covid World</a>
+<a class="collapse-item" href="/api/info/wikipedia?search=jembatan&apikey=APIKEYMU">Wikipedia</a>
+<a class="collapse-item" href="/api/info/drakorasia?search=tale&apikey=APIKEYMU">Drakor Asia</a>
+<a class="collapse-item" href="/api/info/kbbi?kata=pohon&apikey=APIKEYMU">KBBI</a>
+<a class="collapse-item" href="/api/info/kodepos?kota=jakarta&apikey=APIKEYMU">Kode Pos</a>
+</div>
+</div>
+</li>
+<hr class="sidebar-divider">
+<div class="sidebar-heading">
+<div class="version"><b>Contact With Me</b></div>
+</div>
+<li class="nav-item">
+<a class="nav-link collapsed" href="putuarya2785@gmail.com">
+<i class="fab fa-fw fa-youtube"></i>
+<span>Email</span>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link collapsed" href="https://wa.me/62895340972894">
+<i class="fab fa-fw fa-whatsapp"></i>
+<span>WhatsApp</span>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link collapsed" href="https://github.com/MAILBOTZ">
+<i class="fab fa-fw fa-github"></i>
+<span>Github</span>
+</a>
+</li>
+<hr class="sidebar-divider">
+<small class="text-center font-weight-bold text-uppercase">Made With <lord-icon src="https://cdn.lordicon.com/rjzlnunf.json" trigger="loop" delay="1" colors="primary:#08a88a,secondary:#aa0000" style="width:32px;height:32px"> </lord-icon> By Arya</small>
+</ul>
+
+<div id="content-wrapper" class="d-flex flex-column">
+<div id="content" style=" background-image: url(https://pingendo.com/site-assets/cover.jpg);  background-position: top left;  background-size: 100%;  background-repeat: repeat;">
+
+<nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top bg-info">
+<button id="sidebarToggleTop" class="btn btn-link mr-1">
+<i class="fa fa-bars"></i>
+</button>
+<ul class="navbar-nav ml-auto">
+<li class="nav-item dropdown no-arrow">
+<div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+<form class="navbar-search">
+<div class="input-group">
+<input type="text" class="form-control bg-light border-1 small" placeholder="Pencarian" aria-label="Search" aria-describedby="basic-addon2" style="border-color: #3f51b5;">
+<div class="input-group-append">
+<button class="btn btn-primary" type="button">
+<i class="fas fa-search fa-sm"></i>
+</button>
+</div>
+</div>
+</form>
+</div>
+</li>
+<style> .qon {
+  float: left;
+  width: 100%;
+  padding: 1%;
+  margin: 1% 10%;
+  height: 40px;
+  border-radius: 0.3em;
+  box-shadow: 0 0.1em 0.4em;
+}
+</style>
+<li class="nav-item d-none d-lg-block full-screen-link">
+              <a class="nav-link">
+                <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
+              </a>
+            </li>
+<div class="topbar-divider d-none d-sm-block"></div>
+<li class="nav-item dropdown no-arrow">
+<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img class="img-profile rounded-circle" src="https://raw.githubusercontent.com/iniariaaa/yondaktau/main/hi.gif" style="max-width: 60px">
+<span class="ml-2 d-none d-lg-inline text-white small">Guest</span>
+</a>
+<div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+<a class="dropdown-item" href="https://wa.me/62895340972894">
+<i class="fab fa-fw fa-whatsapp"></i> WhatsApp </a>
+<a class="dropdown-item" href="https://github.com/MAILBOTZ">
+<i class="fab fa-fw fa-youtube"></i> Github </a>
+<a class="dropdown-item" href="/price">
+<i class="fas fa-key"></i> APIKEY </a>
+</div>
+</li>
+<li class="nav-item dropdown no-arrow mx-1">
+<a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<lord-icon src="https://cdn.lordicon.com/anihkfxp.json" trigger="click" delay="1" colors="primary:#ffffff,secondary:#ffffff" stroke="120" style="width:30px;height:30px">
+</lord-icon>
+</a>
+<div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+<h6 class="dropdown-header"> Your Android/PC </h6>
+<a class="dropdown-item d-flex align-items-right" href="#">
+<div class="mr-3">
+<div class="icon-circle bg-primary">
+<lord-icon src="https://cdn.lordicon.com/wrprwmwt.json" trigger="loop" delay="1" colors="primary:#ffffff,secondary:#ffffff" stroke="80" style="width:70px;height:70px">
+</lord-icon>
+</div>
+</div>
+<div>
+<div class="small text-gray-500">Agent</div>
+<div id="demo" class="alert alert-info alert-dismissible" role="alert">
+<div id="Statistic"></div>
+<span id="tgl">Waiting</span> - <span id="bln">Connection</span> - <span id="thn"></span>
+</div>
+</div>
+</a>
+</div>
+</li>
+<li class="nav-item dropdown no-arrow mx-1">
+<a class="nav-link dropdown-toggle" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span class="badge badge-danger badge-counter">+</span>
+<i class="fas fa-bell fa-fw"></i>
+</a>
+<div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+<h6 class="dropdown-header"> Notification</h6>
+<div class="dropdown-item d-flex align-items-right" style="background-image: url(https://www.thepaintstoreonline.com/wp-content/uploads/2018/05/100280.jpg)">
+<div class="mr-3">
+</div>
+<div>
+Notification<h2></h2>
+<div class="alert alert-light alert-dismissible" role="alert">
+<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+<p>Apikey Ada Diatas Jika Ingin Membeli Apikey</p>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</nav>
+
+
+<div class="container-fluid" id="container-wrapper">
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+<h1 class="h3 mb-0 text-gray-100">Dashboard</h1>
+<ol class="breadcrumb">
+<li style="color: white;" class="breadcrumb-item"><a href="/">Home</a></li>
+<li class="breadcrumb-item active" style="color: white;" aria-current="page">Dashboard</li>
+</ol>
+</div>
+<div class="row mb-3">
+
+<div class="col-xl-3 col-md-6 mb-4">
+<div class="card h-100">
+<div class="card-body">
+<div class="row align-items-center">
+<div class="col mr-2">
+<h6 class="text-center fa fa-expeditedssl text-primary">Visitor</h6>
+<div class="h5 mb-0 font-weight-bold text-gray-800" id="visits">
+<div class="spinner-grow" role="status">
+<span class="sr-only">Loading...</span>
+</div>
+</div>
+<div class="mt-2 mb-0 text-muted text-xs">
+<span class="text-success mr-2"><i class="fa fa-arrow-up"></i> Users</span>
+</div>
+</div>
+<div class="col-auto">
+<lord-icon src="https://cdn.lordicon.com/dxjqoygy.json" trigger="loop" delay="1" colors="primary:#121331,secondary:#08a88a" style="width:70px;height:70px">
+</lord-icon>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-3 col-md-6 mb-4">
+<div class="card h-100">
+<div class="card-body">
+<div class="row align-items-center">
+<div class="col mr-2">
+<h6 class="text-center fa fa-expeditedssl text-primary">IP ADDRESS</h6>
+<div class="h6 mb-0 font-weight-bold text-gray-800" id="gfg">
+<div class="spinner-grow" role="status">
+<span class="sr-only">Loading...</span>
+</div>
+</div>
+<div class="mt-2 mb-0 text-muted text-xs">
+<p>Your IP</p>
+</div>
+</div>
+<div class="col-auto">
+<lord-icon src="https://cdn.lordicon.com/tclnsjgx.json" trigger="loop" delay="1" colors="primary:#121331,secondary:#08a88a" style="width:70px;height:70px">
+</lord-icon>
+</div>
+</div>
+<a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="IP ADDRESS" data-content="Your IP" aria-hidden="true"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+</div>
+</div>
+</div>
+
+<div class="col-xl-6 col-md-6 mb-4">
+<script> window.onload = function() { jam(); }
+
+ function jam() {
+  var e = document.getElementById('jam'),
+  d = new Date(), h, m, s;
+  h = d.getHours();
+  m = set(d.getMinutes());
+  s = set(d.getSeconds());
+
+  e.innerHTML = h +':'+ m +':'+ s;
+
+  setTimeout('jam()', 1000);
+ }
+
+ function set(e) {
+  e = e < 10 ? '0'+ e : e;
+  return e;
+ }
+      </script>
+<div class="card h-100">
+<div class="card-body">
+<div class="row align-items-center">
+<div class="col mr-2">
+<h6 class="text-center fa fa-expeditedssl text-primary">Waktu</h6>
+<div class="h5 mb-0 font-weight-bold text-gray-800" id="jam">
+<div class="spinner-border spinner-border-sm" role="status">
+<span class="sr-only">
+<div class="spinner-border spinner-border-sm" role="status">
+<span class="sr-only">Loading...</span>
+</div>
+</span>
+</div>
+</div>
+</div>
+<div class="col-auto">
+<lord-icon src="https://cdn.lordicon.com/kbtmbyzy.json" trigger="loop" delay="1" colors="primary:#121331,secondary:#08a88a" style="width:75px;height:75px">
+</lord-icon>
+</div>
+</div><br>
+<h6 class="text-center fa fa-expeditedssl text-primary">Pemakaian Anda</h6>
+<div class="h5 mb-0 font-weight-bold text-gray-800" id="vikoo">
+<div class="spinner-border spinner-border-sm" role="status">
+<span class="sr-only">Loading...</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-3 col-md-6 mb-4">
+<div class="card h-100">
+<div class="card-body">
+<div class="row align-items-center">
+<div class="col mr-2">
+<h6 class="text-center fa fa-expeditedssl text-primary">Road To New Year</h6>
+<div class="h5 mb-0 font-weight-bold text-gray-800" id="IdulFitri">
+<div class="spinner-grow" role="status">
+<span class="sr-only">Loading...</span>
+</div>
+</div>
+<div class="mt-2 mb-0 text-muted text-xs">
+<span class="text-success mr-2">Countdown New Years</span>
+</div>
+</div>
+<div class="col-auto">
+<lord-icon src="https://cdn.lordicon.com/mbyiiqnh.json" trigger="loop" delay="1" colors="primary:#121331,secondary:#08a88a" style="width:70px;height:70px">
+</lord-icon>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-5 col-md-7 mb-4">
+<form action="/api/cekapikey">
+<div class="card h-100">
+<div class="card-body">
+<div class="row align-items-center">
+<div class="col mr-2">
+<i class="fas fa-fw fa-key"></i>
+<div class="h6 mb-0 font-weight-bold text-dark-800 text-uppercase">
+<h6 class="text-center fa fa-expeditedssl text-primary">Check Apikey</h6>
+<input type="password" class="form-control" placeholder="Enter Apikey" name="apikey" required=""><br>
+<button class="btn btn-danger btn-icon-split">
+<span class="text">Check</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+
+<style> .btn {
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 13px;
+  background: #00b7e0;
+  padding: 8px 20px 7px 20px;
+  border: solid #00ccff 0px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #0389ff;
+  text-decoration: none;
+}
+</style>
+<style>
+:root {
+  --surface-color: #fff;
+  --curve: 20;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #fef8f8;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin: 4rem 5vw;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card {
+  position: relative;
+  display: block;
+  height: 100%;  
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.card__image {      
+  width: 100%;
+  height: auto;
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;      
+  border-radius: calc(var(--curve) * 1px);    
+  background-color: var(--surface-color);      
+  transform: translateY(100%);
+  transition: .2s ease-in-out;
+}
+
+.card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;    
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: .2s ease-in-out;
+}
+
+.card__arc {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;      
+  z-index: 1;
+}
+
+.card__arc path {
+  fill: var(--surface-color);
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}       
+
+.card:hover .card__header {
+  transform: translateY(0);
+}
+
+.card__thumb {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;      
+  border-radius: 50%;      
+}
+
+.card__title {
+  font-size: 1em;
+  margin: 0 0 .3em;
+  color: #6A515E;
+}
+
+.card__tagline {
+  display: block;
+  margin: 1em 0;
+  font-family: "MockFlowFont";  
+  font-size: .8em; 
+  color: #D7BDCA;  
+}
+
+.card__status {
+  font-size: .8em;
+  color: #D7BDCA;
+}
+
+.card__description {
+  padding: 0 2em 2em;
+  margin: 0;
+  color: #D7BDCA;
+  font-family: "MockFlowFont";   
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}    
+</style>
+<div class="col-xl-6 col-md-6 mb-4">
+<div class="card h-100">
+<div class="card-body">
+<div class="row no-gutters align-items-center">
+<div class="col mr-2">
+<h6 class="text-center fa fa-expeditedssl text-primary">MUSIC</h6>
+<audio controls loop>
+<source src="https://iniibnu.github.io/music/stay.mp3" type="audio/mp3">
+</audio>
+<div class="mt-2 mb-0 text-muted text-xs">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-3 col-md-6 mb-4">
+<div class="card h-100">
+<div class="card-body">
+<div class="row align-items-center">
+<div class="col mr-2">
+<h6 class="text-center fa fa-expeditedssl text-primary">BATTERY</h6>
+<div class="h5 mb-0 font-weight-bold text-gray-800" id="percentageLevel"><div class="battery"></div><div id="batteryLevel"></div><span id="percentageLevel"></span>
+<div class="spinner-grow" role="status">
+<span class="sr-only">Loading...</span>
+</div>
+</div>
+<div class="mt-2 mb-0 text-muted text-xs">
+<p>Your Battery</p>
+</div>
+</div>
+<div class="col-auto">
+<lord-icon src="https://cdn.lordicon.com/gxulgxck.json" trigger="loop" delay="1" colors="primary:#16c79e,secondary:#08a88a" stroke="52" style="width:60px;height:60px">
+</lord-icon>
+</div>
+</div>
+<a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="BATTERY" data-content="Your BATTERY" aria-hidden="true"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+</div>
+</div>
+</div>
+<div class="col-lg-11">
+<div class="card mb-4">
+<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+<h6 class="m-0 font-weight-bold text-primary">Memory RAM</h6>
+</div>
+<div class="card-body">
+<p>Memori RAM Kamu <strong id="resultRAM"></strong> GB</p>
+<p><b>Rekomendasi, Membutuhkan Minimal RAM 4GB. Jika Dibawah 4GB Akan Delay Saat Menggunakan Rest API Ini. Membutuhkan Jaringan Yang Stabil Dan Spesifikasi Bagus</b>
+<p></p><code>4 GB / <strong id="resultic"></strong> GB</code></p>
+<p id="agen"></p>
+<div id="progresRAM">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="card mb-4">
+<div class="card-header py-3">
+<div class="card-body">
+<div class="card m-3 text-center shadow">
+<p class="card-header shadow-sm bg-primary text-white text-uppercase">About Me</p>
+<div class="text-center">
+<img src="https://telegra.ph/file/e97fc6d0e6e196515f152.jpg" class="rounded-circle shadow mb-3" alt="Hardianto" width="150px" height="150px">
+</div>
+<div class="copyright text-center my-auto">
+<p class="card-text text-shadow">I Putu Arya D.M, 13 Tahun<br></p><div class="text-xs font-weight-bold text-uppercase">
+<h6 class="text-uppercase">THANKS TO</h6><br>
+Ruang Admin<br>
+Orang Tua Saya<br>
+Nathanael<br>
+ZyxMapLe<br>
+Viko<br>
+Farhan<br>
+Hardianto<br>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+<script type="text/javascript">
+          document.getElementById('resultRAM').innerHTML = navigator.deviceMemory || 'unknown'
+          document.getElementById('resultic').innerHTML = navigator.deviceMemory || 'unknown'
+          document.getElementById('agen').innerHTML = navigator.userAgent
+          var devicek = navigator.deviceMemory
+        if(devicek == 1){
+          alert('Apakah Anda Yakin Ingin Menggunakan Rest API Mail Dibawah Ram 4GB')
+          const respuker = `
+          <div class="progress" style="height: 14px;">
+                    <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="3"
+                      aria-valuemin="0" aria-valuemax="4"></div>
+                  </div><br><p>RAM Kamu Terlalu Rendah Untuk Menggunakan Rest API Ini</p>`
+            document.getElementById('progresRAM').innerHTML = respuker || 'unknown'
+        }
+        if(devicek == 2){
+          const respuker = `
+          <div class="progress" style="height: 14px;">
+                    <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="3"
+                      aria-valuemin="0" aria-valuemax="4"></div>
+                  </div><br><p>RAM Kamu Terlalu Rendah Untuk Menggunakan Rest API Ini</p>`
+            document.getElementById('progresRAM').innerHTML = respuker || 'unknown'
+        }
+        if(devicek == 3){
+          const respuker = `
+          <div class="progress" style="height: 14px;">
+                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="3"
+                      aria-valuemin="0" aria-valuemax="4"></div>
+                  </div><br><p>RAM Kamu Terlalu Rendah Untuk Menggunakan Rest API Ini</p>`
+            document.getElementById('progresRAM').innerHTML = respuker || 'unknown'
+        }
+        if(devicek == 4){
+          const respuker = `
+          <div class="progress" style="height: 14px;">
+                    <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="3"
+                      aria-valuemin="0" aria-valuemax="4"></div>
+                  </div><br><p>RAM Kamu Sangat Memadai Silahkan Menggunakan Rest API Ini Tanpa Spam</p>`
+            document.getElementById('progresRAM').innerHTML = respuker || 'unknown'
+        }
+          </script>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  border-radius: 50%;
+  background-color: blue;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  width: 42px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 100px;
+  border: 3px solid #fff;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 800px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: blue;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+<button class="open-button" onclick="openForm()"><i class="fas fa-comments"></i></button>
+<div class="form-popup" id="myForm">
+<form class="form-container" style="background-image: url(https://www.thepaintstoreonline.com/wp-content/uploads/2018/05/100280.jpg)">
+<iframe src="https://www5.cbox.ws/box/?boxid=929463&boxtag=UyXb1F" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+<button onclick="closeForm()">Close Group Chat</button>
+</form>
+</div>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</div>
+<footer class="sticky-footer bg-white">
+<div class="container my-auto">
+<div class="copyright text-center my-auto">
+<span>Copyright © <script>
+                    document.write(new Date().getFullYear());
+                  </script> - Developer By <b><a href="#" target="_blank">Arya</a></b>
+</span>
+</div>
+</div>
+</footer>
+</div>
+
+<script async="" src="https://api.countapi.xyz/hit/zerochanbot.herokuapp.com/visits?callback=cb"></script>
+<script src="https://viko-api.herokuapp.com/vendor/jquery/jquery.min.js"></script>
+<script src="https://viko-api.herokuapp.com/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://viko-api.herokuapp.com/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="https://viko-api.herokuapp.com/js/ruang-admin.js"></script>
+<script src="https://viko-api.herokuapp.com/vendor/chart.js/Chart.min.js"></script>
+<script src="https://viko-api.herokuapp.com/js/demo/chart-area-demo.js"></script>
+<script src="https://viko-api.herokuapp.com/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="https://viko-api.herokuapp.com/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="https://viko-api.herokuapp.com/js/ruang-admin.js"></script>
+
+
+<script id='pixel-script-poptin' src='https://cdn.popt.in/pixel.js?id=8a7c168bda475' async='true'></script>
+<script type="text/javascript">
+      
+      var batteryLevel = document.getElementById("batteryLevel");
+			
+var styleBatteryLevel = batteryLevel.style;
+			
+var percentageLevel = document.getElementById("percentageLevel");
+			
+navigator.getBattery().then(function(battery) {
+				
+
+			
+function updateAllBatteryInfo(){
+			
+updateLevelInfo();
+			
+}
+			
+updateAllBatteryInfo();
+			
+battery.addEventListener('levelchange',      function(){
+			
+setInterval(function(){
+			
+updateLevelInfo()
+			
+},1000);
+			
+});
+			
+			
+function updateLevelInfo(){
+			
+var numBattery = battery.level * 100;
+			
+percentageLevel.textContent=Math.round(numBattery) + "%";
+			
+styleBatteryLevel.height=numBattery + "%";
+			
+if(numBattery<=15) {
+			
+styleBatteryLevel.background="red";
+			
+}
+			
+}
+			
+})
+var countDownDate = new Date("December 31, 2021 00:00:00").getTime();
+
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+    
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  document.getElementById("IdulFitri").innerHTML = days + " Days " + hours + " Hours "
+  + minutes + " Min " + seconds + " Sec ";
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("IdulFitri").innerHTML = "Happy New Year";
+  }
+}, 1000);
+        window.$crisp = [];
+        window.CRISP_WEBSITE_ID = "1c7170fa-cbdb-498a-ba0d-9e6b1ea52df9";
+        (function() {
+          d = document;
+          s = d.createElement("script");
+          s.src = "https://client.crisp.chat/0.js";
+          s.async = 1;
+          d.getElementsByTagName("head")[0].appendChild(s);
+        })();
+      </script>
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+          vikoapi();
+        })
+        document.addEventListener("DOMContentLoaded", function() {
+          markue();
+        })
+        document.addEventListener("DOMContentLoaded", function() {
+          prosedur();
+        })
+      </script>
+<script>
+        $(document).ready(function() {
+          $('#dataTable').DataTable(); // ID From dataTable 
+          $('#dataTableHover').DataTable(); // ID From dataTable with Hover
+        });
+      </script>
+</div>
+</div>
+</body>
+</html>

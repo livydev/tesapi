@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://telegra.ph/file/e97fc6d0e6e196515f152.jpg">
+  <link rel="icon" type="image/png" href="https://telegra.ph/file/e97fc6d0e6e196515f152.jpg">
+  <title>
+    Mail - API
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- Nucleo Icons -->
+  <link href="css/nucleo-icons.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link href="css/black-dashboard.css" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="demo/demo.css" rel="stylesheet" />
+  <link href="css/simple.css" rel="stylesheet" />
+</head>
+
+<body class="">
+  <div class="wrapper">
+    <div class="sidebar">
+      <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red"
+    -->
+      <div class="sidebar-wrapper">
+        <div class="logo text-center">
+          <a href="/" class="simple-text logo-normal" style="font-size: large;">
+                     MAIL - API
+                    </a>
+        </div>
+        <ul class="nav">
+          <li class="active ">
+            <a href="/">
+              <i class="tim-icons icon-chart-pie-36"></i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li>
+            <a href="/downloader">
+              <i class="tim-icons icon-cloud-download-93"></i>
+              <p>Downloader</p>
+            </a>
+          </li>
+          <li>
+            <a href="/music">
+              <i class="fas fa-music"></i>
+              <p>Music</p>
+            </a>
+          </li>
+          <li>
+            <a href="/islam">
+              <i class="tim-icons icon-bulb-63"></i>
+              <p>Islam</p>
+            </a>
+          </li>
+          <li>
+            <a href="/asupan">
+              <i class="fa fa-coffee"></i>
+              <p>Asupan</p>
+            </a>
+          </li>
+          <li>
+            <a href="/nsfw">
+              <i class="fas fa-exclamation-triangle"></i>
+              <p>NSFW</p>
+            </a>
+          </li>
+          <li>
+            <a href="/gacha">
+              <i class="fas fa-fire"></i>
+              <p>Gacha Cewe</p>
+            </a>
+          </li>
+          <li>
+            <a href="/random">
+              <i class="tim-icons icon-image-02"></i>
+              <p>Random Image</p>
+            </a>
+          </li>
+          <li>
+            <a href="/editor">
+              <i class="far fa-bookmark"></i>
+              <p>Image Editor</p>
+            </a>
+          </li>
+          <li>
+            <a href="/maker">
+              <i class="fas fa-fw fa-images"></i>
+              <p>Image Maker</p>
+            </a>
+          </li>
+          <li>
+            <a href="/photooxy">
+              <i class="fas fa-fw fa-images"></i>
+              <p>Photooxy</p>
+            </a>
+          </li>
+          <li>
+            <a href="/canvas">
+              <i class="tim-icons icon-palette"></i>
+              <p>Canvas</p>
+            </a>
+          </li>
+          <li>
+            <a href="/textpro">
+              <i class="tim-icons icon-align-center"></i>
+              <p>Textpro</p>
+            </a>
+          </li>
+          <li>
+            <a href="/random">
+              <i class="tim-icons icon-align-center"></i>
+              <p>Random</p>
+            </a>
+          </li>
+          <li>
+            <a href="/anime">
+              <i class="tim-icons icon-planet"></i>
+              <p>Anime</p>
+            </a>
+          </li>
+          <li>
+            <a href="/fun">
+              <i class="fas fa-laugh-beam"></i>
+              <p>Fun</p>
+            </a>
+          </li>
+          <li>
+            <a href="/tools">
+              <i class="fas fa-wrench"></i>
+              <p>Tools</p>
+            </a>
+          </li>
+          <li>
+            <a href="/other">
+              <i class="fab fa-fw fa-wpforms"></i>
+              <p>Other</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle d-inline">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            <a class="navbar-brand" href="javascript:void(0)">Image Editor</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav ml-auto">
+              
+              <li class="dropdown nav-item">
+               
+                  
+                
+              <li class="dropdown nav-item">
+                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                  <div class="photo">
+                    <img src="https://telegra.ph/file/e97fc6d0e6e196515f152.jpg" alt="Profile Photo">
+                  </div>
+                  <b class="caret d-none d-lg-block d-xl-block"></b>
+                  <p class="d-lg-none">
+                    Contact
+                  </p>
+                </a>
+                <ul class="dropdown-menu dropdown-navbar">
+                  <li class="nav-link"><a href="http://wa.me/6287834993722" class="nav-item dropdown-item">WhatsApp</a></li>
+                  <li class="nav-link"><a href="https://youtube.com/c/ZEROBOT7" class="nav-item dropdown-item">YouTube</a></li>
+                  <li class="nav-link"><a href="https://instagram.com/nathanaelhananta" class="nav-item dropdown-item">Instagram</a></li>
+                </ul>
+              </li>
+              <li class="separator d-lg-none"></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="modal modal-search fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Search">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="tim-icons icon-simple-remove"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="row">
+            
+            <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title">Image Editor Documentation</h4>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead class="text-primary">
+                      <tr>
+                        <th>
+                          Feature
+                        </th>
+                        <th>
+                          Method
+                        </th>
+                        <th>
+                        Description
+                        </th>
+                        <th>
+                          Parameter
+                        </th>
+                        <th>
+                        	Status
+                        </th>
+                        <th class="text-center">
+                          Action
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    	
+                      
+                      <tr>
+                        <td>
+                          Trigger
+                        </td>
+                        <td class="text-center">
+                          GET
+                        </td>
+                        <td>
+                        	Trigger Maker
+                        </td>
+                        <td class="text-center">
+                          apikey, url
+                        </td>
+                        <td>      	
+                        	<span class="badge badge-warning">Active</span>
+                        	</td>
+                        <td class="text-center">
+                        	<a type="button" href="/api/trigger?apikey=APIKEYMU&url=https://telegra.ph/file/e97fc6d0e6e196515f152.jpg" class="text-warning btn-sm btn-icon" rel="nofollow" target="_blank"><i class="tim-icons icon-triangle-right-17"></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Passed
+                        </td>
+                        <td class="text-center">
+                          GET
+                        </td>
+                        <td>
+                        	Passed Maker
+                        	</td>
+                        <td class="text-center">
+                          apikey, url
+                        </td>
+                        <td>      	
+                        	<span class="badge badge-warning">Active</span>
+                        	</td>
+                        <td class="text-center">
+                        	<a type="button" href=/api/passed?apikey=APIKEYMU&url=https://telegra.ph/file/e97fc6d0e6e196515f152.jpg" class="text-warning btn-sm btn-icon" rel="nofollow" target="_blank"><i class="tim-icons icon-triangle-right-17"></i></a>                       
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td>
+                          Wasted
+                        </td>
+                        <td class="text-center">
+                          GET
+                        </td>
+                        <td>
+                        	Wasted Maker
+                        	</td>
+                        <td class="text-center">
+                          apikey, url
+                        </td>
+                        <td>      	
+                        	<span class="badge badge-warning">Active</span>
+                        	</td>
+                        <td class="text-center">
+                        	<a type="button" href="/api/wasted?apikey=APIKEYMU&url=https://telegra.ph/file/e97fc6d0e6e196515f152.jpg" class="text-warning btn-sm btn-icon" rel="nofollow" target="_blank"><i class="tim-icons icon-triangle-right-17"></i></a>             
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td>
+                          Serti FF
+                        </td>
+                        <td class="text-center">
+                          GET
+                        </td>
+                        <td>
+                        	Serti FF Maker
+                        	</td>
+                        <td class="text-center">
+                          apikey, text
+                        </td>
+                        <td>      	
+                        	<span class="badge badge-warning">Active</span>
+                        	</td>
+                        <td class="text-center">
+                        	<a type="button" href="/api/serti/sertiepep?apikey=APIKEYMU&text=Burik" class="text-warning btn-sm btn-icon" rel="nofollow" target="_blank"><i class="tim-icons icon-triangle-right-17"></i></a>             
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td>
+                          Sticker Meme
+                        </td>
+                        <td class="text-center">
+                          GET
+                        </td>
+                        <td>
+                        	Sticker Meme Maker
+                        	</td>
+                        <td class="text-center">
+                          apikey, text1, text2, url
+                        </td>
+                        <td>      	
+                        	<span class="badge badge-warning">Active</span>
+                        	</td>
+                        <td class="text-center">
+                        	<a type="button" href="/api/meme?apikey=APIKEYMU&text=Subscribe&text2=Kalo Gak Jago&url=https://telegra.ph/file/e97fc6d0e6e196515f152.jpg" class="text-warning btn-sm btn-icon" rel="nofollow" target="_blank"><i class="tim-icons icon-triangle-right-17"></i></a>             
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td>
+                         Fisheye
+                        </td>
+                        <td class="text-center">
+                          GET
+                        </td>
+                        <td>
+                        	Fisheye Maker
+                        	</td>
+                        <td class="text-center">
+                          apikey, url
+                        </td>
+                        <td>      	
+                        	<span class="badge badge-warning">Active</span>
+                        	</td>
+                        <td class="text-center">
+                        	<a type="button" href="/api/fisheye?apikey=APIKEYMU&url=https://telegra.ph/file/e97fc6d0e6e196515f152.jpg" class="text-warning btn-sm btn-icon" rel="nofollow" target="_blank"><i class="tim-icons icon-triangle-right-17"></i></a>             
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td>
+                         Scary GIF
+                        </td>
+                        <td class="text-center">
+                          GET
+                        </td>
+                        <td>
+                        	Scary GIF Maker
+                        	</td>
+                        <td class="text-center">
+                          apikey, url
+                        </td>
+                        <td>
+                        	<span class="badge badge-warning">Active</span>
+                        	</td>
+                        <td class="text-center">
+                        	<a type="button" href="/api/scary?apikey=APIKEYMU&url=https://telegra.ph/file/e97fc6d0e6e196515f152.jpg" class="text-warning btn-sm btn-icon" rel="nofollow" target="_blank"><i class="tim-icons icon-triangle-right-17"></i></a>             
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td>
+                         Petir
+                        </td>
+                        <td class="text-center">
+                          GET
+                        </td>
+                        <td>
+                        	Petir Maker
+                        	</td>
+                        <td class="text-center">
+                          apikey, url
+                        </td>
+                        <td>      	
+                        	<span class="badge badge-warning">Active</span>
+                        	</td>
+                        <td class="text-center">
+                        	<a type="button" href="/api/petir?apikey=APIKEYMU&url=https://telegra.ph/file/e97fc6d0e6e196515f152.jpg" class="text-warning btn-sm btn-icon" rel="nofollow" target="_blank"><i class="tim-icons icon-triangle-right-17"></i></a>             
+                        </td>
+                      </tr>
+                      
+                      
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+          </div>
+        </div>
+     
+        
+          </div>
+   
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer fixed-bottom">
+                <div class="copyright text-center my-auto">
+                    Made with <i class="fa fa-heart"></i> by
+                    <a href="http://youtube.com/c/ZEROBOT7" target="_blank" rel="nofollow">Nathan & ZyxMapLe</a>
+                    </span>
+                </div>
+            </footer>
+        </div>
+    </div>
+  <!--   Core JS Files   -->
+  <script src="js/core/jquery.min.js"></script>
+  <script src="js/core/popper.min.js"></script>
+  <script src="js/core/bootstrap.min.js"></script>
+  <script src="js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!--  Google Maps Plugin    -->
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <!-- Chart JS -->
+  <script src="js/plugins/chartjs.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Black Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="js/black-dashboard.min.js?v=1.0.0"></script><!-- Black Dashboard DEMO methods, don't include it in your project! -->
+
+  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+  <script>
+    window.TrackJS &&
+      TrackJS.install({
+        token: "ee6fab19c5a04ac1a32a645abde4613a",
+        application: "black-dashboard-free"
+      });
+  </script>
+  <script> 
+  	$.getJSON("https://api.countapi.xyz/hit/zerochanbot.herokuapp.com/visits",
+	function(data) {
+	$("#visitor").html(data.value);
+	})
+	</script>
+	<script>
+		
+		$.getJSON("https://api.ipify.org?format=json",
+		function(data) {
+			$("#ipaddres").html(data.ip)
+			})
+			</script>
+</body>
+
+</html>
