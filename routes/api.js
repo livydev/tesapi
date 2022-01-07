@@ -8,7 +8,7 @@ var zahirr = db.get("zahirr");
 	console.log('')  
 }
  
-var creator = "Putu Arya"
+var creator = "Wudy"
 var secure = require('ssl-express-www');
 var cors = require('cors');
 var fetch = require('node-fetch');
@@ -29,6 +29,219 @@ var {
 	Searchnabi,
 	Gempa
 } = require('./../lib');
+var { 
+wudy_android1,
+wudy_anime,
+wudy_anoboydl,
+wudy_anoboys,
+wudy_apkmirror,
+wudy_apkmody,
+wudy_artinama,
+wudy_asupanfilm,
+wudy_asupanfilminfo,
+wudy_bacaresep,
+wudy_carigc,
+wudy_cariresep,
+wudy_chara,
+wudy_corona,
+wudy_devianart,
+wudy_dewabatch,
+wudy_drakor,
+wudy_film,
+wudy_gempa,
+wudy_ghfollower,
+wudy_ghfollowing,
+wudy_ghuser,
+wudy_goredl,
+wudy_happymod,
+wudy_happymoddl,
+wudy_igdl,
+wudy_igstalk,
+wudy_job,
+wudy_kiryu,
+wudy_konachan,
+wudy_manga,
+wudy_mangatoon,
+wudy_mediafire,
+wudy_merdekanews,
+wudy_metronews,
+wudy_palingmurah,
+wudy_pinterest2,
+wudy_randomgore,
+wudy_randomtt,
+wudy_rexdl,
+wudy_rexdldown,
+wudy_searchgore,
+wudy_sfiledown,
+wudy_sfilesearch,
+wudy_soundcloud,
+wudy_stickersearch,
+wudy_textmakervid,
+wudy_trendtwit,
+wudy_wallpapercave,
+wudy_wallpapercraft,
+wudy_wallpaperhd,
+wudy_wattpad,
+wudy_webtoons,
+wudy_wikisearch,
+wudy_zerochan,
+wudy_zippydl
+} = require("./../lib/utils/srapp");
+
+var { wudy2_cnn,
+wudy2_corona,
+wudy2_cuaca,
+wudy2_emoji,
+wudy2_FaktaUnik,
+wudy2_fbDownloader,
+wudy2_FilmApik23,
+wudy2_GSMArena,
+wudy2_igDownloader,
+wudy2_infoFilm123,
+wudy2_jagokata,
+wudy2_Liriklagu,
+wudy2_ManggaToon,
+wudy2_Otakudesu,
+wudy2_Pantun,
+wudy2_photoManipulation,
+wudy2_pinterest,
+wudy2_RamalJadian,
+wudy2_RandomCerpen,
+wudy2_ReverseVid,
+wudy2_SearchFilm,
+wudy2_Shoope,
+wudy2_SpeedVid,
+wudy2_ssstik_io,
+wudy2_stickerSearch,
+wudy2_TiktokDown,
+wudy2_TiktokDownloader,
+wudy2_ToVid,
+wudy2_trutdare,
+wudy2_uploadFile,
+wudy2_wikipedia,
+wudy2_ytPlay,
+wudy2_zodiakHar,
+wudy2_zodiakMing
+} = require("./../lib/utils/srapp1");
+
+var { wudy3_ManggaToon,
+wudy3_EmojiScrapper,
+wudy3_RandomCerpen,
+wudy3_StickerSearch,
+wudy3_UploadFile,
+wudy3_igDownload,
+wudy3_Pantun,
+wudy3_TruthOrDare,
+wudy3_SearchFilm,
+wudy3_OtakudesuSearch,
+wudy3_InfoOtakudesu,
+wudy3_Musikmatch,
+wudy3_Snaptik
+} = require("./../lib/utils/srapp2");
+
+var {
+wudy4_getLatest,
+wudy4_getVideo
+} = require("./../lib/utils/srapp3");
+
+var { wudy6_ssweb } = require("./../lib/utils/srapp4");
+
+var {
+apkmody_wudy,
+asmaul_wudy,
+covid_wudy,
+emoji_wudy,
+fb_wudy,
+gempa_wudy,
+ghstalk_wudy,
+halal_wudy,
+happymod_wudy,
+hoax_wudy,
+igfoto_wudy,
+igstalk_wudy,
+igtv_wudy,
+igvideo_wudy,
+jalantikus_wudy,
+kodepos_wudy,
+kompasnews_wudy,
+mcpedl_wudy,
+mediafire_wudy,
+moddroid_wudy,
+palingmurah_wudy,
+pinterest_wudy,
+playstore_wudy,
+servermc_wudy,
+sfilesearch_wudy,
+ssweb_wudy,
+styleText_wudy,
+tahta_wudy,
+tebakgambar_wudy,
+telegra_wudy,
+tiktokmusic_wudy,
+tiktok_wudy,
+tribunnews_wudy,
+twitter_wudy,
+wallpapper_wudy,
+yta_wudy,
+ytv_wudy
+} = require("./../lib/utils/srapp6");
+
+var { 
+wudy8_android1,
+wudy8_anime,
+wudy8_anoboydl,
+wudy8_anoboys,
+wudy8_apkmirror,
+wudy8_apkmody,
+wudy8_artinama,
+wudy8_asupanfilm,
+wudy8_asupanfilminfo,
+wudy8_bacaresep,
+wudy8_carigc,
+wudy8_cariresep,
+wudy8_chara,
+wudy8_corona,
+wudy8_devianart,
+wudy8_dewabatch,
+wudy8_drakor,
+wudy8_film,
+wudy8_gempa,
+wudy8_ghfollower,
+wudy8_ghfollowing,
+wudy8_ghuser,
+wudy8_goredl,
+wudy8_happymod,
+wudy8_happymoddl,
+wudy8_hentaivid,
+wudy8_igdl,
+wudy8_igstalk,
+wudy8_job,
+wudy8_kiryu,
+wudy8_konachan,
+wudy8_manga,
+wudy8_mangatoon,
+wudy8_mediafire,
+wudy8_palingmurah,
+wudy8_pinterest,
+wudy8_pornvid,
+wudy8_randomgore,
+wudy8_randomtt,
+wudy8_searchgore,
+wudy8_sfiledown,
+wudy8_sfilesearch,
+wudy8_soundcloud,
+wudy8_stickersearch,
+wudy8_textmakervid,
+wudy8_trendtwit,
+wudy8_wallpapercave,
+wudy8_wallpapercraft,
+wudy8_wallpaperhd,
+wudy8_wattpad,
+wudy8_webtoons,
+wudy8_wikisearch,
+wudy8_zerochan,
+wudy8_zippydl
+} = require("./../lib/utils/srapp5");
 
 var {
   pShadow,
@@ -178,7 +391,7 @@ Akhir Pesan Error
 
 router.use(favicon(__path + "/views/favicon.ico"));
 
-const listkey = ["AryaKey25"];
+const listkey = ["Wudy"];
 
 router.get('/knights/rank', async (req, res, next) => {
         var apikeyInput = req.query.apikey,
@@ -4721,5 +4934,2399 @@ router.use(function (req, res) {
     .set("Content-Type", "text/html")
     .sendFile(__path + '/views/404.html');
 });
+
+
+router.get('/wudy/android1', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_android1(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/anime', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_anime(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/anoboydl', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_anoboydl(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/anoboys', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_anoboys(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/apkmirror', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_apkmirror(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/apkmody', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_apkmody(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/artinama', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_artinama(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/asupanfilm', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_asupanfilm(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/asupanfilminfo', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_asupanfilminfo(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/bacaresep', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_bacaresep(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/carigc', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_carigc(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/cariresep', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_cariresep(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/chara', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_chara(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/corona', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_corona(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/devianart', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_devianart(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/dewabatch', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_dewabatch(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/drakor', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_drakor(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/film', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_film(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/gempa', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_gempa(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/ghfollower', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_ghfollower(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/ghfollowing', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_ghfollowing(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/ghuser', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_ghuser(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/goredl', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_goredl(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/happymod', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_happymod(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/happymoddl', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_happymoddl(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/igdl', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_igdl(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/igstalk', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_igstalk(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/job', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_job(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/kiryu', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_kiryu(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/konachan', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_konachan(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/manga', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_manga(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/mangatoon', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_mangatoon(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/mediafire', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_mediafire(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/merdekanews', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_merdekanews(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/metronews', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_metronews(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/palingmurah', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_palingmurah(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/pinterest2', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_pinterest2(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/randomgore', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_randomgore(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/randomtt', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_randomtt(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/rexdl', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_rexdl(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/rexdldown', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_rexdldown(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/searchgore', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_searchgore(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/sfiledown', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_sfiledown(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/sfilesearch', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_sfilesearch(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/soundcloud', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_soundcloud(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/stickersearch', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_stickersearch(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/textmakervid', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_textmakervid(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/trendtwit', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_trendtwit(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/wallpapercave', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_wallpapercave(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/wallpapercraft', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_wallpapercraft(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/wallpaperhd', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_wallpaperhd(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/wattpad', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_wattpad(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/webtoons', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_webtoons(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/wikisearch', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_wikisearch(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/zerochan', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_zerochan(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy/zippydl', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+wudy_zippydl(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+
+router.get('/wudy2/jagokata', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_jagokata(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/RandomCerpen', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_RandomCerpen(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/emoji', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_emoji(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/stickerSearch', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_stickerSearch(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/ManggaToon', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_ManggaToon(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/RamalJadian', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_RamalJadian(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/Pantun', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_Pantun(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/trutdare', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_trutdare(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/SearchFilm', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_SearchFilm(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/infoFilm123', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_infoFilm123(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/FaktaUnik', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_FaktaUnik(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/Liriklagu', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_Liriklagu(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/Otakudesu', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_Otakudesu(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/wikipedia', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_wikipedia(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/corona', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+   wudy2_corona(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/cuaca', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_cuaca(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/FilmApik23', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_FilmApik23(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/FilmApik23', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_FilmApik23(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/cnn', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_cnn(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/TiktokDownloader', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_TiktokDownloader(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/uploadFile', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+   wudy2_uploadFile(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/ytPlay', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_ytPlay(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/igDownloader', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_igDownloader(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/ssstik_io', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+   wudy2_ssstik_io(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/photoManipulation', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_photoManipulation(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/ToVid', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_ToVid (query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/fbDownloader', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_fbDownloader(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/SpeedVid', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_SpeedVid(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/ReverseVid', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_ReverseVid(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/GSMArena', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+   wudy2_GSMArena(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/zodiakMing', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_zodiakMing(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/zodiakHar', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+   wudy2_zodiakHar (query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/Shoope', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_Shoope(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/pinterest', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_pinterest(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy2/TiktokDown', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy2_TiktokDown(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/tiktok_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  tiktok_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/tiktokmusic_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  tiktokmusic_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/ghstalk_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  ghstalk_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/telegra_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  telegra_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/yta_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  yta_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/ytv_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  ytv_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/emoji_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  emoji_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/mediafire_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  mediafire_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/covid_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  covid_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/tahta_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  tahta_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/styleText_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  styleText_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/asmaul_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  asmaul_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/fb_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  fb_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/igstalk_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  igstalk_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/tebakgambar_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  tebakgambar_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/playstore_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  playstore_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/twitter_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  twitter_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/kodepos_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  kodepos_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/gempa_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  gempa_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/servermc_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  servermc_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/happymod_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  happymod_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/kompasnews_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  kompasnews_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/tribunnews_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  tribunnews_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/jalantikus_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  jalantikus_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/igtv_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  igtv_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/igfoto_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  igfoto_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/igvideo_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  igvideo_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/hoax_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  hoax_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/sfilesearch_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  sfilesearch_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/mcpedl_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  mcpedl_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/halal_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  halal_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/wallpapper_wudy =wallpapper_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/apkmody_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  apkmody_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/moddroid_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  moddroid_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/pinterest_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  pinterest_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/palingmurah_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  palingmurah_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy3/ssweb_wudy', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  ssweb_wudy(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+
+router.get('/wudy4/ManggaToon', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy3_ManggaToon(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy4/EmojiScrapper', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy3_EmojiScrapper(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy4/RandomCerpen', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy3_RandomCerpen(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy4/StickerSearch', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy3_StickerSearch(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy4/UploadFile', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy3_UploadFile(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy4/igDownload', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy3_igDownload(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy4/Pantun', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy3_Pantun(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy4/TruthOrDare', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy3_TruthOrDare(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy4/SearchFilm', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy3_SearchFilm(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy4/OtakudesuSearch', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy3_OtakudesuSearch(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy4/InfoOtakudesu', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy3_InfoOtakudesu(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy4/Musikmatch', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy3_Musikmatch(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/wudy4/Snaptik', async(req, res, next) => {
+  const query = req.query.query;
+  const apikey = req.query.apikey;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+  wudy3_Snaptik(query)
+  .then((result) => {
+  res.json(result)
+    res.json(result)
+  });
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+
 
 module.exports = router
